@@ -1,0 +1,236 @@
+{
+  "dataset": "PRGF baru consolidated v1.0",
+  "date": "2026-11-17",
+  "records_loaded": 17638,
+  "records_loaded_per_source": {
+    "AFLOW": 5874,
+    "MP": 815,
+    "NOMAD": 10000,
+    "COD": 940,
+    "PubChem": 9
+  },
+  "records_parsed_per_source": {
+    "AFLOW": 5874,
+    "MP": 815,
+    "NOMAD": 10000,
+    "COD": 939,
+    "PubChem": 8
+  },
+  "unparseable": {
+    "COD: non-integer counts: - Al0.5 Ba0.0835 Ca0.75 F1.16 Fe4.42 K0.125 Li0.25 Mg0.25 Mn1.42 Na1.13 O23.82 P6 Pb0.0835 Sr0.0835 Zn0.42 -": 1,
+    "PubChem: charge artefact": 1
+  },
+  "unique_reduced_formulas": 3249,
+  "overlap_matrix_shared_reduced_formulas": {
+    "AFLOW": {
+      "AFLOW": 777,
+      "MP": 123,
+      "NOMAD": 642,
+      "COD": 83,
+      "PubChem": 7
+    },
+    "MP": {
+      "AFLOW": 123,
+      "MP": 708,
+      "NOMAD": 346,
+      "COD": 138,
+      "PubChem": 7
+    },
+    "NOMAD": {
+      "AFLOW": 642,
+      "MP": 346,
+      "NOMAD": 2093,
+      "COD": 127,
+      "PubChem": 7
+    },
+    "COD": {
+      "AFLOW": 83,
+      "MP": 138,
+      "NOMAD": 127,
+      "COD": 810,
+      "PubChem": 7
+    },
+    "PubChem": {
+      "AFLOW": 7,
+      "MP": 7,
+      "NOMAD": 7,
+      "COD": 7,
+      "PubChem": 8
+    }
+  },
+  "oqmd": {
+    "records_harvested": 1000,
+    "records_with_Ca_and_P": 0,
+    "status": "EXCLUDED from v1.0 \u2014 element filters ignored by oqmdapi; composition queries 502/timeout",
+    "follow_up": "per-composition re-harvest or oqmdapi client on owner's PC"
+  },
+  "calibration_MP_vs_AFLOW": {
+    "n_overlap_formulas": 123,
+    "elements_fitted": [
+      "Ag",
+      "Al",
+      "Au",
+      "B",
+      "Ba",
+      "Be",
+      "C",
+      "Ca",
+      "Cd",
+      "Cl",
+      "Co",
+      "Cr",
+      "Cu",
+      "F",
+      "Fe",
+      "Ga",
+      "Ge",
+      "H",
+      "I",
+      "In",
+      "Ir",
+      "K",
+      "Li",
+      "Mg",
+      "Mn",
+      "N",
+      "Na",
+      "Nb",
+      "Ni",
+      "O",
+      "P",
+      "Pd",
+      "Pt",
+      "Rh",
+      "Ru",
+      "S",
+      "Se",
+      "Si",
+      "Sn",
+      "U",
+      "V",
+      "Zn",
+      "Zr"
+    ],
+    "mu_eV_per_atom_of_element": {
+      "Ag": -2.2104541486665994,
+      "Al": -2.242180732453683,
+      "Au": -5.100701114448427,
+      "B": -6.564008247638679,
+      "Ba": -3.1601721286530626,
+      "Be": -3.2637966172292368,
+      "C": -9.391464382814407,
+      "Ca": -2.4912007403416054,
+      "Cd": -0.7599698595365663,
+      "Cl": -0.989930547449532,
+      "Co": -7.053291654649218,
+      "Cr": -8.317365595068487,
+      "Cu": -1.9475061290100637,
+      "F": -1.070903264499496,
+      "Fe": -8.03196663674855,
+      "Ga": -2.0431722230039426,
+      "Ge": -3.9217531678901327,
+      "H": -3.5028838017884567,
+      "I": -0.6757091124774899,
+      "In": -2.2919054497209475,
+      "Ir": -8.631335968741945,
+      "K": -1.7200797958739238,
+      "Li": -2.2246220781633275,
+      "Mg": -1.9072157326252634,
+      "Mn": -8.595747842235363,
+      "N": -7.82335192561778,
+      "Na": -2.026637556277434,
+      "Nb": -10.121576926193256,
+      "Ni": -5.460769936706496,
+      "O": -4.088420849571633,
+      "P": -5.254311991348943,
+      "Pd": -4.108567776657993,
+      "Pt": -5.302514430333233,
+      "Rh": -7.332868039991142,
+      "Ru": -8.977048335504012,
+      "S": -3.7208588672985705,
+      "Se": -2.4903558103006445,
+      "Si": -5.154898822674738,
+      "Sn": -4.062162365490417,
+      "U": -11.06019634610135,
+      "V": -8.38456720621061,
+      "Zn": -0.8974409649739501,
+      "Zr": -9.705353851002947
+    },
+    "residual_RMSE_eV_per_atom": 0.210480678685691,
+    "R2": 0.9981714440048994,
+    "note": "Fit: E_form(MP,total) = E_total(AFLOW,total) - sum n_i mu_i. Pairs match most-stable polymorph per source; residuals include polymorph mismatch + code/pseudopotential differences. mu values are NOT transferable physical constants without validation."
+  },
+  "gap_map": {
+    "formulas_with_MP_formation_energy": 708,
+    "formulas_with_density": 1362,
+    "formulas_with_band_gap": 708,
+    "formulas_with_any_structure": 2033,
+    "formulas_with_energy_and_structure": 708,
+    "formulas_NOMAD_only": 1215,
+    "formulas_COD_only": 662,
+    "formulas_AFLOW_only": 131,
+    "formulas_in_2plus_sources": 900,
+    "formulas_in_3plus_sources": 161,
+    "formulas_with_elastic_data": 0
+  },
+  "chemistry": {
+    "formulas_with_Ca_and_P": 3249,
+    "formulas_phosphate_P_and_O": 1535,
+    "formulas_Ca_P_ratio_1.5_to_1.67": 161,
+    "formulas_Ca_P_ratio_near_1.67_pm0.05": 151,
+    "formulas_with_elements_beyond_Ca_P_O_H_F_C": 3073,
+    "top_extra_elements": [
+      [
+        "Na",
+        539
+      ],
+      [
+        "S",
+        253
+      ],
+      [
+        "Si",
+        240
+      ],
+      [
+        "Fe",
+        217
+      ],
+      [
+        "N",
+        192
+      ],
+      [
+        "Mg",
+        182
+      ],
+      [
+        "Mn",
+        169
+      ],
+      [
+        "Al",
+        159
+      ],
+      [
+        "Cl",
+        143
+      ],
+      [
+        "Sr",
+        114
+      ]
+    ],
+    "formulas_with_Sr": 114,
+    "formulas_with_Mg": 182,
+    "formulas_with_Zn": 75,
+    "formulas_with_Si": 240
+  },
+  "notes": [
+    "AFLOW energy_atom is TOTAL energy per atom, never mixed with MP formation energies.",
+    "Same reduced formula from different sources may be different polymorphs; composition-level dedup does not imply structure identity.",
+    "COD formula vs calcformula can differ in H count (H placement); COD 'formula' was used, H counts should be treated with care.",
+    "NOMAD-only formulas have elements + formula only (no energy, no structure) \u2014 they are pointers for follow-up fetch, not training data.",
+    "Elastic data: 0 formulas in v1.0 (same gap as old pipeline, n=9 there)."
+  ]
+}

@@ -1,0 +1,249 @@
+{
+  "metode": "s dipindai langkah 0,01 pada validasi Ca-P n=127 (cakupan +-1 sigma terdekat 0,68); cakupan test dihitung dengan s yang sama (out-of-sample). Ensemble 5 seed, prediksi test mereproduksi wp2_gnn_pretrained.json (max |d mean| 7.15e-07)",
+  "s_lama": 1.85,
+  "s_prime": 2.370000000000002,
+  "s_edge_exact": 2.363269090652466,
+  "n_val": 127,
+  "n_test": 115,
+  "cakupan_validasi_s185": 0.5433,
+  "cakupan_validasi_s_prime": 0.6772,
+  "cakupan_test_s185": 0.6783,
+  "cakupan_test_s_prime": 0.713,
+  "kurva_cakupan_validasi_di_sekitar_s_prime": {
+    "1.87": 0.5512,
+    "2.12": 0.5748,
+    "2.27": 0.6535,
+    "2.37": 0.6772,
+    "2.47": 0.6772,
+    "2.62": 0.7323,
+    "2.87": 0.7638
+  },
+  "mae_validasi": 0.1071,
+  "mae_test": 0.0874,
+  "sd_rerata_validasi": 0.0581,
+  "sd_rerata_test": 0.0525,
+  "dampak_lcb": {
+    "s_prime": 2.370000000000002,
+    "s_lama": 1.85,
+    "verifikasi_s_lama_mereproduksi_hull_lcb": "30/30 OK",
+    "identitas_linear_max_selisih": 0.0001,
+    "backtest": {
+      "R0": {
+        "s185": {
+          "TP": 1,
+          "FP": 4,
+          "FN": 0
+        },
+        "s_prime": {
+          "TP": 1,
+          "FP": 4,
+          "FN": 0
+        },
+        "berubah": false
+      },
+      "R1": {
+        "s185": {
+          "TP": 0,
+          "FP": 3,
+          "FN": 1
+        },
+        "s_prime": {
+          "TP": 0,
+          "FP": 3,
+          "FN": 1
+        },
+        "berubah": false
+      },
+      "R2": {
+        "s185": {
+          "TP": 1,
+          "FP": 2,
+          "FN": 0
+        },
+        "s_prime": {
+          "TP": 1,
+          "FP": 2,
+          "FN": 0
+        },
+        "berubah": false
+      },
+      "R5": {
+        "s185": {
+          "TP": 1,
+          "FP": 0,
+          "FN": 0
+        },
+        "s_prime": {
+          "TP": 1,
+          "FP": 0,
+          "FN": 0
+        },
+        "berubah": false
+      }
+    },
+    "pool_R2_lama": [
+      "r2_01_Ca3O8P2",
+      "r2_04_Ca18Eu2O48P12S3",
+      "r2_15_Ca3HfNa4O24P2S4",
+      "r2_17_Ca2CeO8P",
+      "r2_18_CaFMgO4P",
+      "r2_21_Ca3FNaO12P3Sm",
+      "r2_24_Al2CaO6P",
+      "r2_25_Ca5F4Mg5O21P5",
+      "r2_26_BCaO5P",
+      "r2_27_Ca4F3Mg4O17P4",
+      "r2_29_Ca9InO28P7",
+      "r2_30_Ca10CsO28P7"
+    ],
+    "pool_R2_baru": [
+      "r2_01_Ca3O8P2",
+      "r2_04_Ca18Eu2O48P12S3",
+      "r2_14_CCa5O12P3",
+      "r2_15_Ca3HfNa4O24P2S4",
+      "r2_17_Ca2CeO8P",
+      "r2_18_CaFMgO4P",
+      "r2_21_Ca3FNaO12P3Sm",
+      "r2_23_Ca4FO12P3Sr",
+      "r2_24_Al2CaO6P",
+      "r2_25_Ca5F4Mg5O21P5",
+      "r2_26_BCaO5P",
+      "r2_27_Ca4F3Mg4O17P4",
+      "r2_29_Ca9InO28P7",
+      "r2_30_Ca10CsO28P7"
+    ],
+    "pool_R2_masuk": [
+      "r2_14_CCa5O12P3",
+      "r2_23_Ca4FO12P3Sr"
+    ],
+    "pool_R2_keluar": [],
+    "R5_tak_berlabel_lama": [
+      "r2_18_CaFMgO4P",
+      "r2_25_Ca5F4Mg5O21P5",
+      "r2_27_Ca4F3Mg4O17P4"
+    ],
+    "R5_tak_berlabel_baru": [
+      "r2_18_CaFMgO4P",
+      "r2_23_Ca4FO12P3Sr",
+      "r2_25_Ca5F4Mg5O21P5",
+      "r2_27_Ca4F3Mg4O17P4"
+    ],
+    "R5_masuk": [
+      "r2_23_Ca4FO12P3Sr"
+    ],
+    "R5_keluar": [],
+    "R6_R6b_varian": {
+      "primer_kolam_baru_norm_baru": {
+        "R6": [
+          "r2_26_BCaO5P",
+          "r2_18_CaFMgO4P",
+          "r2_25_Ca5F4Mg5O21P5"
+        ],
+        "R6b": [
+          "r2_18_CaFMgO4P",
+          "r2_25_Ca5F4Mg5O21P5",
+          "r2_27_Ca4F3Mg4O17P4"
+        ],
+        "R6_sama_dengan_beku": false,
+        "R6b_sama_dengan_beku": true
+      },
+      "kolam9_lama_norm9_lama_s_baru": {
+        "R6": [
+          "r2_26_BCaO5P",
+          "r2_18_CaFMgO4P",
+          "r2_25_Ca5F4Mg5O21P5"
+        ],
+        "R6b": [
+          "r2_18_CaFMgO4P",
+          "r2_25_Ca5F4Mg5O21P5",
+          "r2_27_Ca4F3Mg4O17P4"
+        ],
+        "R6_sama_dengan_beku": false,
+        "R6b_sama_dengan_beku": true
+      },
+      "sensA_kolam9_norm30_s_baru": {
+        "R6": [
+          "r2_26_BCaO5P",
+          "r2_18_CaFMgO4P",
+          "r2_25_Ca5F4Mg5O21P5"
+        ],
+        "R6b": [
+          "r2_18_CaFMgO4P",
+          "r2_25_Ca5F4Mg5O21P5",
+          "r2_27_Ca4F3Mg4O17P4"
+        ],
+        "R6_sama_dengan_beku": false,
+        "R6b_sama_dengan_beku": true
+      },
+      "sensB_kolam25_norm25_s_baru": {
+        "R6": [
+          "r2_20_Ca2O5P",
+          "r2_26_BCaO5P",
+          "r2_18_CaFMgO4P"
+        ],
+        "R6b": [
+          "r2_20_Ca2O5P",
+          "r2_18_CaFMgO4P",
+          "r2_25_Ca5F4Mg5O21P5"
+        ],
+        "R6_sama_dengan_beku": false,
+        "R6b_sama_dengan_beku": false
+      },
+      "kontrol_primer_s_lama": {
+        "R6": [
+          "r2_26_BCaO5P",
+          "r2_29_Ca9InO28P7",
+          "r2_18_CaFMgO4P"
+        ],
+        "R6b": [
+          "r2_18_CaFMgO4P",
+          "r2_25_Ca5F4Mg5O21P5",
+          "r2_27_Ca4F3Mg4O17P4"
+        ],
+        "R6_sama_dengan_beku": true,
+        "R6b_sama_dengan_beku": true
+      }
+    },
+    "beku_R6": [
+      "r2_26_BCaO5P",
+      "r2_29_Ca9InO28P7",
+      "r2_18_CaFMgO4P"
+    ],
+    "beku_R6b": [
+      "r2_18_CaFMgO4P",
+      "r2_25_Ca5F4Mg5O21P5",
+      "r2_27_Ca4F3Mg4O17P4"
+    ],
+    "hull_lcb_baru_per_kandidat": {
+      "r2_01_Ca3O8P2": -0.0688,
+      "r2_02_Ca5FO12P3": 0.1228,
+      "r2_03_Ca14F3MnO36P9": 0.0908,
+      "r2_04_Ca18Eu2O48P12S3": -0.0262,
+      "r2_05_Ca5O12P3": 0.0709,
+      "r2_06_Ca10ClFO24P6": 0.1284,
+      "r2_07_Ca10O24P6S": 0.0667,
+      "r2_08_Ca5ClO12P3": 0.0866,
+      "r2_09_Ca5O13P3": 0.0713,
+      "r2_10_Ca10O24P6Se": 0.0941,
+      "r2_11_Ca5HO13P3": 0.0621,
+      "r2_12_Ca10O25P6": 0.1756,
+      "r2_13_CCa10O27P6": 0.1067,
+      "r2_14_CCa5O12P3": 0.0495,
+      "r2_15_Ca3HfNa4O24P2S4": 0.0118,
+      "r2_16_Ca2O6PTb": -0.2357,
+      "r2_17_Ca2CeO8P": -0.6115,
+      "r2_18_CaFMgO4P": -0.0775,
+      "r2_19_Ca2H2O6P": -0.8559,
+      "r2_20_Ca2O5P": -0.3051,
+      "r2_21_Ca3FNaO12P3Sm": -0.0348,
+      "r2_22_Ca9F2NdO24P5Si": 0.088,
+      "r2_23_Ca4FO12P3Sr": 0.0498,
+      "r2_24_Al2CaO6P": -0.0907,
+      "r2_25_Ca5F4Mg5O21P5": -0.0662,
+      "r2_26_BCaO5P": -0.2775,
+      "r2_27_Ca4F3Mg4O17P4": -0.0576,
+      "r2_28_Ca18F3Nd2O48P9Si3": 0.1326,
+      "r2_29_Ca9InO28P7": -0.0975,
+      "r2_30_Ca10CsO28P7": -0.0382
+    }
+  }
+}

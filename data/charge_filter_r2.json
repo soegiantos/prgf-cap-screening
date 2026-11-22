@@ -1,0 +1,1083 @@
+{
+  "metode": "Filter keseimbangan muatan: muatan bersih rumus (keadaan oksidasi standar) harus == 0. Sumber rumus: aturan_seleksi_v2.json (= dft_r2/manifest.json); label validasi: dft_labels_r2_train.json.",
+  "tabel_oksidasi": {
+    "H": {
+      "muatan": 1,
+      "alasan": "proton; gugus OH/HO3 dalam fosfat"
+    },
+    "O": {
+      "muatan": -2,
+      "alasan": "oksida; semua kandidat adalah oksida/fosfat"
+    },
+    "F": {
+      "muatan": -1,
+      "alasan": "fluorida; substitusi situs OH"
+    },
+    "Cl": {
+      "muatan": -1,
+      "alasan": "klorida; substitusi situs OH"
+    },
+    "Ca": {
+      "muatan": 2,
+      "alasan": "alkali tanah; situs utama Ca"
+    },
+    "Mg": {
+      "muatan": 2,
+      "alasan": "substitusi Ca2+ (ion terverifikasi)"
+    },
+    "Sr": {
+      "muatan": 2,
+      "alasan": "substitusi Ca2+ (ion terverifikasi)"
+    },
+    "Ba": {
+      "muatan": 2,
+      "alasan": "alkali tanah; tidak muncul di 30 kandidat"
+    },
+    "Zn": {
+      "muatan": 2,
+      "alasan": "substitusi Ca2+ (ion terverifikasi)"
+    },
+    "Na": {
+      "muatan": 1,
+      "alasan": "alkali; substitusi minor situs Ca"
+    },
+    "K": {
+      "muatan": 1,
+      "alasan": "alkali; tidak muncul di 30 kandidat"
+    },
+    "Li": {
+      "muatan": 1,
+      "alasan": "alkali; tidak muncul di 30 kandidat"
+    },
+    "Cs": {
+      "muatan": 1,
+      "alasan": "alkali"
+    },
+    "P": {
+      "muatan": 5,
+      "alasan": "fosfat PO4(3-)"
+    },
+    "Si": {
+      "muatan": 4,
+      "alasan": "silikat SiO4(4-) (ion terverifikasi)"
+    },
+    "B": {
+      "muatan": 3,
+      "alasan": "borat (BO3/BO4)"
+    },
+    "Al": {
+      "muatan": 3,
+      "alasan": "golongan 13; satu keadaan oksidasi di oksida"
+    },
+    "In": {
+      "muatan": 3,
+      "alasan": "golongan 13, seperti Al"
+    },
+    "Hf": {
+      "muatan": 4,
+      "alasan": "golongan 4; satu keadaan oksidasi di oksida"
+    },
+    "Mn": {
+      "muatan": 2,
+      "alasan": "Mn2+ substitusi situs Ca2+ (ion terverifikasi; literatur HAp)"
+    },
+    "Ce": {
+      "muatan": 3,
+      "alasan": "Ce3+ lantanida; keadaan umum substitusi situs Ca"
+    },
+    "Tb": {
+      "muatan": 3,
+      "alasan": "Tb3+ lantanida; DIPAKSA oleh validasi: r2_16 hanya lolos bila Tb=+3"
+    },
+    "Eu": {
+      "muatan": 3,
+      "alasan": "Eu3+ lantanida; keadaan umum dalam fosfat"
+    },
+    "Sm": {
+      "muatan": 3,
+      "alasan": "Sm3+ lantanida; keadaan umum substitusi situs Ca"
+    },
+    "Nd": {
+      "muatan": 3,
+      "alasan": "Nd3+ lantanida; keadaan umum substitusi situs Ca"
+    },
+    "C": {
+      "muatan": 4,
+      "alasan": "karbonat CO3(2-) \u2014 bentuk C dalam mineral tulang/fosfat"
+    },
+    "S": {
+      "muatan": -2,
+      "alasan": "sulfida S2-; O rumus hanya cukup untuk gugus PO4, bukan SO4"
+    },
+    "Se": {
+      "muatan": -2,
+      "alasan": "selenida Se2-; analog S (O rumus hanya cukup untuk PO4)"
+    }
+  },
+  "validasi_5_label": {
+    "r2_01_Ca3O8P2": {
+      "formula": "Ca3O8P2",
+      "counts": {
+        "Ca": 3,
+        "P": 2,
+        "O": 8
+      },
+      "net_charge": 0,
+      "lolos": true,
+      "diharapkan_lolos": true,
+      "stabil_dft": true
+    },
+    "r2_16_Ca2O6PTb": {
+      "formula": "Ca2O6PTb",
+      "counts": {
+        "P": 1,
+        "Ca": 2,
+        "Tb": 1,
+        "O": 6
+      },
+      "net_charge": 0,
+      "lolos": true,
+      "diharapkan_lolos": true,
+      "stabil_dft": false
+    },
+    "r2_17_Ca2CeO8P": {
+      "formula": "Ca2CeO8P",
+      "counts": {
+        "Ca": 2,
+        "Ce": 1,
+        "P": 1,
+        "O": 8
+      },
+      "net_charge": -4,
+      "lolos": false,
+      "diharapkan_lolos": false,
+      "stabil_dft": false
+    },
+    "r2_19_Ca2H2O6P": {
+      "formula": "Ca2H2O6P",
+      "counts": {
+        "Ca": 2,
+        "P": 1,
+        "H": 2,
+        "O": 6
+      },
+      "net_charge": -1,
+      "lolos": false,
+      "diharapkan_lolos": false,
+      "stabil_dft": false
+    },
+    "r2_24_Al2CaO6P": {
+      "formula": "Al2CaO6P",
+      "counts": {
+        "Ca": 2,
+        "Al": 4,
+        "P": 2,
+        "O": 12
+      },
+      "net_charge": 2,
+      "lolos": false,
+      "diharapkan_lolos": false,
+      "stabil_dft": false
+    }
+  },
+  "validasi_lolos": true,
+  "kandidat": [
+    {
+      "job": "r2_01_Ca3O8P2",
+      "formula": "Ca3O8P2",
+      "counts": {
+        "Ca": 3,
+        "O": 8,
+        "P": 2
+      },
+      "net_charge": 0,
+      "lolos_muatan": true,
+      "bio_lolos": true,
+      "lolos_R2": true,
+      "lolos_R5": true,
+      "source": "MP",
+      "tier": "A",
+      "dft_hull": 0.0254,
+      "stabil_dft": true
+    },
+    {
+      "job": "r2_02_Ca5FO12P3",
+      "formula": "Ca5FO12P3",
+      "counts": {
+        "Ca": 5,
+        "F": 1,
+        "O": 12,
+        "P": 3
+      },
+      "net_charge": 0,
+      "lolos_muatan": true,
+      "bio_lolos": true,
+      "lolos_R2": false,
+      "lolos_R5": false,
+      "source": "MP",
+      "tier": "A",
+      "dft_hull": null,
+      "stabil_dft": null
+    },
+    {
+      "job": "r2_03_Ca14F3MnO36P9",
+      "formula": "Ca14F3MnO36P9",
+      "counts": {
+        "Ca": 14,
+        "F": 3,
+        "Mn": 1,
+        "O": 36,
+        "P": 9
+      },
+      "net_charge": 0,
+      "lolos_muatan": true,
+      "bio_lolos": true,
+      "lolos_R2": false,
+      "lolos_R5": false,
+      "source": "MP",
+      "tier": "A",
+      "dft_hull": null,
+      "stabil_dft": null
+    },
+    {
+      "job": "r2_04_Ca18Eu2O48P12S3",
+      "formula": "Ca18Eu2O48P12S3",
+      "counts": {
+        "Ca": 18,
+        "Eu": 2,
+        "O": 48,
+        "P": 12,
+        "S": 3
+      },
+      "net_charge": 0,
+      "lolos_muatan": true,
+      "bio_lolos": false,
+      "lolos_R2": true,
+      "lolos_R5": false,
+      "source": "MP",
+      "tier": "A",
+      "dft_hull": null,
+      "stabil_dft": null
+    },
+    {
+      "job": "r2_05_Ca5O12P3",
+      "formula": "Ca5O12P3",
+      "counts": {
+        "Ca": 5,
+        "O": 12,
+        "P": 3
+      },
+      "net_charge": 1,
+      "lolos_muatan": false,
+      "bio_lolos": true,
+      "lolos_R2": false,
+      "lolos_R5": false,
+      "source": "MP",
+      "tier": "A",
+      "dft_hull": null,
+      "stabil_dft": null
+    },
+    {
+      "job": "r2_06_Ca10ClFO24P6",
+      "formula": "Ca10ClFO24P6",
+      "counts": {
+        "Ca": 10,
+        "Cl": 1,
+        "F": 1,
+        "O": 24,
+        "P": 6
+      },
+      "net_charge": 0,
+      "lolos_muatan": true,
+      "bio_lolos": true,
+      "lolos_R2": false,
+      "lolos_R5": false,
+      "source": "MP",
+      "tier": "A",
+      "dft_hull": null,
+      "stabil_dft": null
+    },
+    {
+      "job": "r2_07_Ca10O24P6S",
+      "formula": "Ca10O24P6S",
+      "counts": {
+        "Ca": 10,
+        "O": 24,
+        "P": 6,
+        "S": 1
+      },
+      "net_charge": 0,
+      "lolos_muatan": true,
+      "bio_lolos": false,
+      "lolos_R2": false,
+      "lolos_R5": false,
+      "source": "MP",
+      "tier": "A",
+      "dft_hull": null,
+      "stabil_dft": null
+    },
+    {
+      "job": "r2_08_Ca5ClO12P3",
+      "formula": "Ca5ClO12P3",
+      "counts": {
+        "Ca": 5,
+        "Cl": 1,
+        "O": 12,
+        "P": 3
+      },
+      "net_charge": 0,
+      "lolos_muatan": true,
+      "bio_lolos": true,
+      "lolos_R2": false,
+      "lolos_R5": false,
+      "source": "MP",
+      "tier": "A",
+      "dft_hull": null,
+      "stabil_dft": null
+    },
+    {
+      "job": "r2_09_Ca5O13P3",
+      "formula": "Ca5O13P3",
+      "counts": {
+        "Ca": 5,
+        "O": 13,
+        "P": 3
+      },
+      "net_charge": -1,
+      "lolos_muatan": false,
+      "bio_lolos": true,
+      "lolos_R2": false,
+      "lolos_R5": false,
+      "source": "COD",
+      "tier": "A",
+      "dft_hull": null,
+      "stabil_dft": null
+    },
+    {
+      "job": "r2_10_Ca10O24P6Se",
+      "formula": "Ca10O24P6Se",
+      "counts": {
+        "Ca": 10,
+        "O": 24,
+        "P": 6,
+        "Se": 1
+      },
+      "net_charge": 0,
+      "lolos_muatan": true,
+      "bio_lolos": false,
+      "lolos_R2": false,
+      "lolos_R5": false,
+      "source": "MP",
+      "tier": "A",
+      "dft_hull": null,
+      "stabil_dft": null
+    },
+    {
+      "job": "r2_11_Ca5HO13P3",
+      "formula": "Ca5HO13P3",
+      "counts": {
+        "Ca": 5,
+        "H": 1,
+        "O": 13,
+        "P": 3
+      },
+      "net_charge": 0,
+      "lolos_muatan": true,
+      "bio_lolos": true,
+      "lolos_R2": false,
+      "lolos_R5": false,
+      "source": "MP",
+      "tier": "A",
+      "dft_hull": null,
+      "stabil_dft": null
+    },
+    {
+      "job": "r2_12_Ca10O25P6",
+      "formula": "Ca10O25P6",
+      "counts": {
+        "Ca": 10,
+        "O": 25,
+        "P": 6
+      },
+      "net_charge": 0,
+      "lolos_muatan": true,
+      "bio_lolos": true,
+      "lolos_R2": false,
+      "lolos_R5": false,
+      "source": "MP",
+      "tier": "A",
+      "dft_hull": null,
+      "stabil_dft": null
+    },
+    {
+      "job": "r2_13_CCa10O27P6",
+      "formula": "CCa10O27P6",
+      "counts": {
+        "C": 1,
+        "Ca": 10,
+        "O": 27,
+        "P": 6
+      },
+      "net_charge": 0,
+      "lolos_muatan": true,
+      "bio_lolos": false,
+      "lolos_R2": false,
+      "lolos_R5": false,
+      "source": "MP",
+      "tier": "A",
+      "dft_hull": null,
+      "stabil_dft": null
+    },
+    {
+      "job": "r2_14_CCa5O12P3",
+      "formula": "CCa5O12P3",
+      "counts": {
+        "C": 1,
+        "Ca": 5,
+        "O": 12,
+        "P": 3
+      },
+      "net_charge": 5,
+      "lolos_muatan": false,
+      "bio_lolos": false,
+      "lolos_R2": false,
+      "lolos_R5": false,
+      "source": "MP",
+      "tier": "A",
+      "dft_hull": null,
+      "stabil_dft": null
+    },
+    {
+      "job": "r2_15_Ca3HfNa4O24P2S4",
+      "formula": "Ca3HfNa4O24P2S4",
+      "counts": {
+        "Ca": 3,
+        "Hf": 1,
+        "Na": 4,
+        "O": 24,
+        "P": 2,
+        "S": 4
+      },
+      "net_charge": -32,
+      "lolos_muatan": false,
+      "bio_lolos": false,
+      "lolos_R2": true,
+      "lolos_R5": false,
+      "source": "MP",
+      "tier": "A",
+      "dft_hull": null,
+      "stabil_dft": null
+    },
+    {
+      "job": "r2_16_Ca2O6PTb",
+      "formula": "Ca2O6PTb",
+      "counts": {
+        "Ca": 2,
+        "O": 6,
+        "P": 1,
+        "Tb": 1
+      },
+      "net_charge": 0,
+      "lolos_muatan": true,
+      "bio_lolos": false,
+      "lolos_R2": false,
+      "lolos_R5": false,
+      "source": "NOMAD",
+      "tier": "B",
+      "dft_hull": 0.2426,
+      "stabil_dft": false
+    },
+    {
+      "job": "r2_17_Ca2CeO8P",
+      "formula": "Ca2CeO8P",
+      "counts": {
+        "Ca": 2,
+        "Ce": 1,
+        "O": 8,
+        "P": 1
+      },
+      "net_charge": -4,
+      "lolos_muatan": false,
+      "bio_lolos": false,
+      "lolos_R2": true,
+      "lolos_R5": false,
+      "source": "NOMAD",
+      "tier": "B",
+      "dft_hull": 0.6906,
+      "stabil_dft": false
+    },
+    {
+      "job": "r2_18_CaFMgO4P",
+      "formula": "CaFMgO4P",
+      "counts": {
+        "Ca": 1,
+        "F": 1,
+        "Mg": 1,
+        "O": 4,
+        "P": 1
+      },
+      "net_charge": 0,
+      "lolos_muatan": true,
+      "bio_lolos": true,
+      "lolos_R2": true,
+      "lolos_R5": true,
+      "source": "MP",
+      "tier": "B",
+      "dft_hull": null,
+      "stabil_dft": null
+    },
+    {
+      "job": "r2_19_Ca2H2O6P",
+      "formula": "Ca2H2O6P",
+      "counts": {
+        "Ca": 2,
+        "H": 2,
+        "O": 6,
+        "P": 1
+      },
+      "net_charge": -1,
+      "lolos_muatan": false,
+      "bio_lolos": true,
+      "lolos_R2": false,
+      "lolos_R5": false,
+      "source": "NOMAD",
+      "tier": "B",
+      "dft_hull": 0.5003,
+      "stabil_dft": false
+    },
+    {
+      "job": "r2_20_Ca2O5P",
+      "formula": "Ca2O5P",
+      "counts": {
+        "Ca": 2,
+        "O": 5,
+        "P": 1
+      },
+      "net_charge": -1,
+      "lolos_muatan": false,
+      "bio_lolos": true,
+      "lolos_R2": false,
+      "lolos_R5": false,
+      "source": "NOMAD",
+      "tier": "B",
+      "dft_hull": null,
+      "stabil_dft": null
+    },
+    {
+      "job": "r2_21_Ca3FNaO12P3Sm",
+      "formula": "Ca3FNaO12P3Sm",
+      "counts": {
+        "Ca": 3,
+        "F": 1,
+        "Na": 1,
+        "O": 12,
+        "P": 3,
+        "Sm": 1
+      },
+      "net_charge": 0,
+      "lolos_muatan": true,
+      "bio_lolos": false,
+      "lolos_R2": true,
+      "lolos_R5": false,
+      "source": "MP",
+      "tier": "B",
+      "dft_hull": null,
+      "stabil_dft": null
+    },
+    {
+      "job": "r2_22_Ca9F2NdO24P5Si",
+      "formula": "Ca9F2NdO24P5Si",
+      "counts": {
+        "Ca": 9,
+        "F": 2,
+        "Nd": 1,
+        "O": 24,
+        "P": 5,
+        "Si": 1
+      },
+      "net_charge": 0,
+      "lolos_muatan": true,
+      "bio_lolos": false,
+      "lolos_R2": false,
+      "lolos_R5": false,
+      "source": "NOMAD",
+      "tier": "B",
+      "dft_hull": null,
+      "stabil_dft": null
+    },
+    {
+      "job": "r2_23_Ca4FO12P3Sr",
+      "formula": "Ca4FO12P3Sr",
+      "counts": {
+        "Ca": 4,
+        "F": 1,
+        "O": 12,
+        "P": 3,
+        "Sr": 1
+      },
+      "net_charge": 0,
+      "lolos_muatan": true,
+      "bio_lolos": true,
+      "lolos_R2": false,
+      "lolos_R5": false,
+      "source": "MP",
+      "tier": "B",
+      "dft_hull": null,
+      "stabil_dft": null
+    },
+    {
+      "job": "r2_24_Al2CaO6P",
+      "formula": "Al2CaO6P",
+      "counts": {
+        "Al": 2,
+        "Ca": 1,
+        "O": 6,
+        "P": 1
+      },
+      "net_charge": 1,
+      "lolos_muatan": false,
+      "bio_lolos": false,
+      "lolos_R2": true,
+      "lolos_R5": false,
+      "source": "NOMAD",
+      "tier": "B",
+      "dft_hull": 0.311,
+      "stabil_dft": false
+    },
+    {
+      "job": "r2_25_Ca5F4Mg5O21P5",
+      "formula": "Ca5F4Mg5O21P5",
+      "counts": {
+        "Ca": 5,
+        "F": 4,
+        "Mg": 5,
+        "O": 21,
+        "P": 5
+      },
+      "net_charge": -1,
+      "lolos_muatan": false,
+      "bio_lolos": true,
+      "lolos_R2": true,
+      "lolos_R5": true,
+      "source": "MP",
+      "tier": "B",
+      "dft_hull": null,
+      "stabil_dft": null
+    },
+    {
+      "job": "r2_26_BCaO5P",
+      "formula": "BCaO5P",
+      "counts": {
+        "B": 1,
+        "Ca": 1,
+        "O": 5,
+        "P": 1
+      },
+      "net_charge": 0,
+      "lolos_muatan": true,
+      "bio_lolos": false,
+      "lolos_R2": true,
+      "lolos_R5": false,
+      "source": "MP",
+      "tier": "B",
+      "dft_hull": null,
+      "stabil_dft": null
+    },
+    {
+      "job": "r2_27_Ca4F3Mg4O17P4",
+      "formula": "Ca4F3Mg4O17P4",
+      "counts": {
+        "Ca": 4,
+        "F": 3,
+        "Mg": 4,
+        "O": 17,
+        "P": 4
+      },
+      "net_charge": -1,
+      "lolos_muatan": false,
+      "bio_lolos": true,
+      "lolos_R2": true,
+      "lolos_R5": true,
+      "source": "MP",
+      "tier": "B",
+      "dft_hull": null,
+      "stabil_dft": null
+    },
+    {
+      "job": "r2_28_Ca18F3Nd2O48P9Si3",
+      "formula": "Ca18F3Nd2O48P9Si3",
+      "counts": {
+        "Ca": 18,
+        "F": 3,
+        "Nd": 2,
+        "O": 48,
+        "P": 9,
+        "Si": 3
+      },
+      "net_charge": 0,
+      "lolos_muatan": true,
+      "bio_lolos": false,
+      "lolos_R2": false,
+      "lolos_R5": false,
+      "source": "MP",
+      "tier": "B",
+      "dft_hull": null,
+      "stabil_dft": null
+    },
+    {
+      "job": "r2_29_Ca9InO28P7",
+      "formula": "Ca9InO28P7",
+      "counts": {
+        "Ca": 9,
+        "In": 1,
+        "O": 28,
+        "P": 7
+      },
+      "net_charge": 0,
+      "lolos_muatan": true,
+      "bio_lolos": false,
+      "lolos_R2": true,
+      "lolos_R5": false,
+      "source": "MP",
+      "tier": "B",
+      "dft_hull": null,
+      "stabil_dft": null
+    },
+    {
+      "job": "r2_30_Ca10CsO28P7",
+      "formula": "Ca10CsO28P7",
+      "counts": {
+        "Ca": 10,
+        "Cs": 1,
+        "O": 28,
+        "P": 7
+      },
+      "net_charge": 0,
+      "lolos_muatan": true,
+      "bio_lolos": false,
+      "lolos_R2": true,
+      "lolos_R5": false,
+      "source": "MP",
+      "tier": "B",
+      "dft_hull": null,
+      "stabil_dft": null
+    }
+  ],
+  "ringkasan": {
+    "lolos_muatan_30": 20,
+    "lolos_muatan_tak_berlabel_25": 18,
+    "AND_bio_muatan_30": 9,
+    "AND_bio_muatan_tak_berlabel_25": 8,
+    "AND_bio_muatan_tak_berlabel": [
+      "r2_02_Ca5FO12P3",
+      "r2_03_Ca14F3MnO36P9",
+      "r2_06_Ca10ClFO24P6",
+      "r2_08_Ca5ClO12P3",
+      "r2_11_Ca5HO13P3",
+      "r2_12_Ca10O25P6",
+      "r2_18_CaFMgO4P",
+      "r2_23_Ca4FO12P3Sr"
+    ],
+    "R7_R5_plus_muatan": [
+      "r2_01_Ca3O8P2",
+      "r2_18_CaFMgO4P"
+    ],
+    "R7_R5_plus_muatan_tak_berlabel": [
+      "r2_18_CaFMgO4P"
+    ],
+    "R2_lolos_muatan": [
+      "r2_04_Ca18Eu2O48P12S3",
+      "r2_18_CaFMgO4P",
+      "r2_21_Ca3FNaO12P3Sm",
+      "r2_26_BCaO5P",
+      "r2_29_Ca9InO28P7",
+      "r2_30_Ca10CsO28P7"
+    ],
+    "R2_lolos_muatan_jumlah": "6/9 (tak berlabel)",
+    "R2_berlabel_lolos_muatan": {
+      "r2_01_Ca3O8P2": true,
+      "r2_17_Ca2CeO8P": false,
+      "r2_24_Al2CaO6P": false
+    },
+    "R2_lolos_muatan_total_termasuk_label": "7/12",
+    "R5_prospektif_vs_muatan": {
+      "r2_18_CaFMgO4P": true,
+      "r2_25_Ca5F4Mg5O21P5": false,
+      "r2_27_Ca4F3Mg4O17P4": false
+    },
+    "backtest_muatan_saja": {
+      "TP": 1,
+      "FP": 1,
+      "TN": 3,
+      "FN": 0,
+      "precision": 0.5,
+      "recall": 1.0,
+      "precision_CI95": [
+        0.01,
+        0.99
+      ],
+      "recall_CI95": [
+        0.03,
+        1.0
+      ]
+    },
+    "backtest_AND_bio_muatan": {
+      "TP": 1,
+      "FP": 0,
+      "TN": 4,
+      "FN": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "precision_CI95": [
+        0.03,
+        1.0
+      ],
+      "recall_CI95": [
+        0.03,
+        1.0
+      ]
+    },
+    "backtest_R7": {
+      "TP": 1,
+      "FP": 0,
+      "TN": 4,
+      "FN": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "precision_CI95": [
+        0.03,
+        1.0
+      ],
+      "recall_CI95": [
+        0.03,
+        1.0
+      ]
+    },
+    "backtest_biologi_saja_kontrol": {
+      "TP": 1,
+      "FP": 1,
+      "TN": 3,
+      "FN": 0,
+      "precision": 0.5,
+      "recall": 1.0,
+      "precision_CI95": [
+        0.01,
+        0.99
+      ],
+      "recall_CI95": [
+        0.03,
+        1.0
+      ]
+    }
+  },
+  "sensitivitas": {
+    "S:-2->6": {
+      "kandidat_berubah": [
+        "r2_04_Ca18Eu2O48P12S3",
+        "r2_07_Ca10O24P6S",
+        "r2_15_Ca3HfNa4O24P2S4"
+      ],
+      "lolos_muatan_total": 19,
+      "AND_tak_berlabel": 8,
+      "R7": [
+        "r2_01_Ca3O8P2",
+        "r2_18_CaFMgO4P"
+      ],
+      "backtest_muatan": {
+        "TP": 1,
+        "FP": 1,
+        "TN": 3,
+        "FN": 0
+      },
+      "backtest_AND": {
+        "TP": 1,
+        "FP": 0,
+        "TN": 4,
+        "FN": 0
+      }
+    },
+    "Se:-2->6": {
+      "kandidat_berubah": [
+        "r2_10_Ca10O24P6Se"
+      ],
+      "lolos_muatan_total": 19,
+      "AND_tak_berlabel": 8,
+      "R7": [
+        "r2_01_Ca3O8P2",
+        "r2_18_CaFMgO4P"
+      ],
+      "backtest_muatan": {
+        "TP": 1,
+        "FP": 1,
+        "TN": 3,
+        "FN": 0
+      },
+      "backtest_AND": {
+        "TP": 1,
+        "FP": 0,
+        "TN": 4,
+        "FN": 0
+      }
+    },
+    "Eu:3->2": {
+      "kandidat_berubah": [
+        "r2_04_Ca18Eu2O48P12S3"
+      ],
+      "lolos_muatan_total": 19,
+      "AND_tak_berlabel": 8,
+      "R7": [
+        "r2_01_Ca3O8P2",
+        "r2_18_CaFMgO4P"
+      ],
+      "backtest_muatan": {
+        "TP": 1,
+        "FP": 1,
+        "TN": 3,
+        "FN": 0
+      },
+      "backtest_AND": {
+        "TP": 1,
+        "FP": 0,
+        "TN": 4,
+        "FN": 0
+      }
+    },
+    "Mn:2->3": {
+      "kandidat_berubah": [
+        "r2_03_Ca14F3MnO36P9"
+      ],
+      "lolos_muatan_total": 19,
+      "AND_tak_berlabel": 7,
+      "R7": [
+        "r2_01_Ca3O8P2",
+        "r2_18_CaFMgO4P"
+      ],
+      "backtest_muatan": {
+        "TP": 1,
+        "FP": 1,
+        "TN": 3,
+        "FN": 0
+      },
+      "backtest_AND": {
+        "TP": 1,
+        "FP": 0,
+        "TN": 4,
+        "FN": 0
+      }
+    },
+    "Mn:2->4": {
+      "kandidat_berubah": [
+        "r2_03_Ca14F3MnO36P9"
+      ],
+      "lolos_muatan_total": 19,
+      "AND_tak_berlabel": 7,
+      "R7": [
+        "r2_01_Ca3O8P2",
+        "r2_18_CaFMgO4P"
+      ],
+      "backtest_muatan": {
+        "TP": 1,
+        "FP": 1,
+        "TN": 3,
+        "FN": 0
+      },
+      "backtest_AND": {
+        "TP": 1,
+        "FP": 0,
+        "TN": 4,
+        "FN": 0
+      }
+    },
+    "Ce:3->4": {
+      "kandidat_berubah": [],
+      "lolos_muatan_total": 20,
+      "AND_tak_berlabel": 8,
+      "R7": [
+        "r2_01_Ca3O8P2",
+        "r2_18_CaFMgO4P"
+      ],
+      "backtest_muatan": {
+        "TP": 1,
+        "FP": 1,
+        "TN": 3,
+        "FN": 0
+      },
+      "backtest_AND": {
+        "TP": 1,
+        "FP": 0,
+        "TN": 4,
+        "FN": 0
+      }
+    },
+    "C:4->-4": {
+      "kandidat_berubah": [
+        "r2_13_CCa10O27P6"
+      ],
+      "lolos_muatan_total": 19,
+      "AND_tak_berlabel": 8,
+      "R7": [
+        "r2_01_Ca3O8P2",
+        "r2_18_CaFMgO4P"
+      ],
+      "backtest_muatan": {
+        "TP": 1,
+        "FP": 1,
+        "TN": 3,
+        "FN": 0
+      },
+      "backtest_AND": {
+        "TP": 1,
+        "FP": 0,
+        "TN": 4,
+        "FN": 0
+      }
+    },
+    "Sm:3->2": {
+      "kandidat_berubah": [
+        "r2_21_Ca3FNaO12P3Sm"
+      ],
+      "lolos_muatan_total": 19,
+      "AND_tak_berlabel": 8,
+      "R7": [
+        "r2_01_Ca3O8P2",
+        "r2_18_CaFMgO4P"
+      ],
+      "backtest_muatan": {
+        "TP": 1,
+        "FP": 1,
+        "TN": 3,
+        "FN": 0
+      },
+      "backtest_AND": {
+        "TP": 1,
+        "FP": 0,
+        "TN": 4,
+        "FN": 0
+      }
+    },
+    "Nd:3->2": {
+      "kandidat_berubah": [
+        "r2_22_Ca9F2NdO24P5Si",
+        "r2_28_Ca18F3Nd2O48P9Si3"
+      ],
+      "lolos_muatan_total": 18,
+      "AND_tak_berlabel": 8,
+      "R7": [
+        "r2_01_Ca3O8P2",
+        "r2_18_CaFMgO4P"
+      ],
+      "backtest_muatan": {
+        "TP": 1,
+        "FP": 1,
+        "TN": 3,
+        "FN": 0
+      },
+      "backtest_AND": {
+        "TP": 1,
+        "FP": 0,
+        "TN": 4,
+        "FN": 0
+      }
+    }
+  }
+}
